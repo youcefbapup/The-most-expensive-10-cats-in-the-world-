@@ -1,51 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The World's 10 Rarest and Most Expensive Cats... You Might Own One!</title>
-
+    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-
+    
     <style>
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f8f9fa;
         }
         .page-section {
-            display: none;
+            display: none; /* Hide all pages by default */
         }
         .page-section.active {
-            display: block;
+            display: block; /* Show only the active page */
         }
         .section-title {
-            font-size: 2.25rem;
-            font-weight: 900;
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 900; /* font-black */
             margin-top: 1rem;
-            margin-bottom: 1.5rem;
-            color: #1a202c;
-            border-left: 5px solid #2563eb;
-            padding-left: 1rem;
+            margin-bottom: 1.5rem; /* mb-6 */
+            color: #1a202c; /* text-gray-800 */
+            border-left: 5px solid #2563eb; /* border-blue-600 */
+            padding-left: 1rem; /* pl-4 */
         }
         .sub-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: #1e3a8a;
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 700; /* font-bold */
+            margin-top: 2rem; /* mt-8 */
+            margin-bottom: 1rem; /* mb-4 */
+            color: #1e3a8a; /* text-blue-900 */
         }
         .section-content p, .section-content ul li {
-            font-size: 1.125rem;
-            line-height: 2;
-            color: #4a5568;
-            margin-bottom: 1.5rem;
+            font-size: 1.125rem; /* text-lg */
+            line-height: 2; /* leading-loose */
+            color: #4a5568; /* text-gray-600 */
+            margin-bottom: 1.5rem; /* mb-6 */
         }
         .comment {
             border-bottom: 1px solid #e5e7eb;
@@ -53,7 +52,289 @@
     </style>
 </head>
 <body class="bg-gray-50">
-<!-- Full HTML content continues here -->
-<!-- Truncated for brevity -->
+    
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-900">
+                <a href="#" class="nav-link" data-page="article">Cat Kingdom</a>
+            </div>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300" data-page="article">Article</a>
+                <a href="#" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300" data-page="about">About Us</a>
+                <a href="#" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300" data-page="contact">Contact Us</a>
+                <a href="#" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300" data-page="privacy">Privacy</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+            <a href="#" class="nav-link block py-2 text-gray-600 hover:text-blue-600" data-page="article">Article</a>
+            <a href="#" class="nav-link block py-2 text-gray-600 hover:text-blue-600" data-page="about">About Us</a>
+            <a href="#" class="nav-link block py-2 text-gray-600 hover:text-blue-600" data-page="contact">Contact Us</a>
+            <a href="#" class="nav-link block py-2 text-gray-600 hover:text-blue-600" data-page="privacy">Privacy</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto max-w-4xl px-6 py-12">
+        <!-- Article Page -->
+        <section id="page-article" class="page-section active">
+            <article class="section-content">
+                <header class="text-center mb-12">
+                    <h1 class="text-4xl md:text-6xl font-black text-blue-900 leading-tight">The World's 10 Rarest and Most Expensive Cats... You Might Own One!</h1>
+                    <p class="mt-4 text-xl text-gray-600">A deep dive into the world of luxury felines, where it's not just about beauty, but genetics, rarity, and symbolism.</p>
+                </header>
+                <div class="mb-12">
+                    <img src="https://images.unsplash.com/photo-1574158622682-e40e69841006?q=80&w=2080&auto=format&fit=crop" alt="" class="w-full h-auto rounded-xl shadow-2xl object-cover">
+                </div>
+                <p>When we talk about the "most expensive cats," we're not just referring to a price tag, but to a whole story of genetic engineering, extreme rarity, and the human desire to own something unique and exceptional. These cats are more than just pets; they are status symbols and living, breathing works of art. Let's delve into the world of the top two most expensive breeds and analyze what makes them so incredibly valuable.</p>
+                
+                <section id="ashera">
+                    <h2 class="section-title">1. The Ashera Cat: A Legend of Luxury Marketing</h2>
+                    <img src="https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?q=80&w=1932&auto=format&fit=crop" alt="A luxurious Ashera cat" class="w-full h-auto rounded-lg shadow-lg my-6">
+                    <h3 class="sub-title">Price and The Power of Branding</h3>
+                    <p><strong>Price:</strong> $22,000 - $125,000</p>
+                    <p>The Ashera is a masterclass in marketing. Marketed by a company named "Lifestyle Pets," it was positioned as the world's most exclusive pet. The controversy is that genetic testing proved the Ashera was not a new breed, but a rebranding of the F1 Savannah cat. The high price tag was justified by selling an "experience"—including consultations and premium services—rather than just a cat. This demonstrates that in the luxury market, narrative and perceived exclusivity can be as valuable as the product itself.</p>
+                    <h3 class="sub-title">Key Characteristics</h3>
+                    <ul class="list-disc list-inside section-content">
+                        <li><strong>Size:</strong> Large, weighing up to 30 pounds (14 kg).</li>
+                        <li><strong>Lifespan:</strong> Up to 25 years.</li>
+                        <li><strong>Temperament:</strong> Despite its wild looks, it is known to be loyal, intelligent, and can be affectionate with its family, though it retains strong instincts.</li>
+                    </ul>
+                </section>
+
+                <section id="savannah">
+                    <h2 class="section-title">2. The Savannah Cat: Wild Beauty as a Companion</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Savannah_Cat_portrait.jpg" alt="A majestic Savannah cat" class="w-full h-auto rounded-lg shadow-lg my-6">
+                    <h3 class="sub-title">Understanding the Value</h3>
+                     <p><strong>Price:</strong> $1,500 - $50,000+</p>
+                    <p>The Savannah is a direct hybrid of the wild African Serval and a domestic cat. Its price is directly tied to its "filial generation" (F-generation), which measures how many generations it is removed from its Serval ancestor. An F1 Savannah (one parent is a Serval) is the most expensive, while an F5 or F6 is much more affordable and has a temperament closer to a typical domestic cat.</p>
+                    <h3 class="sub-title">Lifestyle and Care</h3>
+                     <p>What truly sets the Savannah apart is its "dog-like" personality. They are intensely loyal, can be trained to walk on a leash, and love to play fetch. This high intelligence and energy level comes with specific needs: a high-protein diet, secure enclosures (as they are incredible jumpers and escape artists), and plenty of vertical space and interactive toys to prevent boredom and destructive behavior.</p>
+                     <ul class="list-disc list-inside section-content">
+                        <li><strong>Size:</strong> Tall and lean, can weigh up to 25 pounds (11 kg), especially earlier generations.</li>
+                        <li><strong>Lifespan:</strong> 12 - 20 years.</li>
+                        <li><strong>Temperament:</strong> Highly intelligent, curious, active, and loyal. They require a committed and engaged owner.</li>
+                    </ul>
+                </section>
+                
+                <footer class="mt-16 pt-8 border-t-2 border-gray-200 text-center">
+                    <p class="mb-8 text-lg">These two breeds are just the tip of the iceberg. Want to explore more?</p>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Click to Continue Reading</h3>
+                    <a href="https://url-shortener.me/c/myaccount" target="_blank" class="inline-block max-w-sm mx-auto transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://c.top4top.io/p_34806xnth0.jpeg" alt="Continue Reading" class="w-full h-auto rounded-lg shadow-lg">
+                    </a>
+                </footer>
+            </article>
+            <section id="comments" class="mt-16 pt-8 border-t-2 border-gray-300">
+                <h2 class="section-title">Share Your Thoughts</h2>
+                <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                    <form id="comment-form">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
+                            <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="comment" class="block text-gray-700 font-bold mb-2">Comment:</label>
+                            <textarea id="comment" name="comment" rows="4" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                        </div>
+                        <div class="text-right">
+                            <button type="submit" id="submit-comment" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300 disabled:bg-gray-400" disabled>Add Comment</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="comments-list" class="space-y-6">
+                    <p class="text-gray-500">Loading comments...</p>
+                </div>
+            </section>
+        </section>
+
+        <!-- About Us Page -->
+        <section id="page-about" class="page-section section-content">
+            <h2 class="section-title">About Us</h2>
+            <p>Welcome to Cat Kingdom, your number one source for all things feline. We're dedicated to giving you the very best of cat-related content, with a focus on unique breeds, expert care tips, and heartwarming stories. Founded in 2025 by a team of passionate cat lovers, Cat Kingdom has come a long way from its beginnings. We now serve readers all over the world and are thrilled to be a part of the quirky, wonderful world of the cat community.</p>
+        </section>
+
+        <!-- Contact Us Page -->
+        <section id="page-contact" class="page-section section-content">
+            <h2 class="section-title">Contact Us</h2>
+            <p>Have questions or comments? We'd love to hear from you! Fill out the form below to get in touch with our team.</p>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <form action="#" method="POST" onsubmit="alert('Thank you for your message!'); this.reset(); return false;">
+                    <div class="mb-4">
+                        <label for="contact-name" class="block text-gray-700 font-bold mb-2">Name:</label>
+                        <input type="text" id="contact-name" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="contact-email" class="block text-gray-700 font-bold mb-2">Email:</label>
+                        <input type="email" id="contact-email" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="contact-message" class="block text-gray-700 font-bold mb-2">Message:</label>
+                        <textarea id="contact-message" rows="5" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <div class="text-right">
+                        <button type="submit" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Privacy Policy Page -->
+        <section id="page-privacy" class="page-section section-content">
+            <h2 class="section-title">Privacy Policy</h2>
+            <p>Your privacy is important to us. It is Cat Kingdom's policy to respect your privacy regarding any information we may collect from you across our website. We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.</p>
+            <p>We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification.</p>
+        </section>
+    </main>
+
+    <!-- Simple Footer -->
+    <footer class="text-center py-6 bg-gray-100 mt-12">
+        <p class="text-gray-600">&copy; 2025 Cat Kingdom Gazette. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Firebase & Page Navigation Script -->
+    <script type="module">
+        // --- Page Navigation Logic ---
+        const navLinks = document.querySelectorAll('.nav-link');
+        const pageSections = document.querySelectorAll('.page-section');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuBtn = document.getElementById('menu-btn');
+
+        function showPage(pageId) {
+            pageSections.forEach(section => {
+                section.classList.remove('active');
+            });
+            const targetPage = document.getElementById(`page-${pageId}`);
+            if (targetPage) {
+                targetPage.classList.add('active');
+            }
+            window.scrollTo(0, 0);
+        }
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const pageId = e.target.closest('.nav-link').dataset.page;
+                showPage(pageId);
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // --- Firebase SDK ---
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getFirestore, collection, addDoc, query, onSnapshot, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        import { getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const auth = getAuth(app);
+
+        let commentsInitialized = false;
+
+        function initializeCommentsSection() {
+            if (commentsInitialized) return;
+            commentsInitialized = true;
+
+            const submitButton = document.getElementById('submit-comment');
+            submitButton.disabled = false;
+
+            const commentsCollectionRef = collection(db, `/artifacts/${appId}/public/data/comments`);
+            const commentForm = document.getElementById('comment-form');
+            const commentsList = document.getElementById('comments-list');
+
+            commentForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const nameInput = document.getElementById('name');
+                const commentInput = document.getElementById('comment');
+
+                if (nameInput.value.trim() && commentInput.value.trim()) {
+                    try {
+                        await addDoc(commentsCollectionRef, {
+                            name: nameInput.value,
+                            text: commentInput.value,
+                            createdAt: serverTimestamp()
+                        });
+                        commentForm.reset();
+                    } catch (error) {
+                        console.error("Error adding document: ", error);
+                        alert("An error occurred while adding your comment. Please try again.");
+                    }
+                }
+            });
+
+            const q = query(commentsCollectionRef);
+            onSnapshot(q, (snapshot) => {
+                commentsList.innerHTML = '';
+                if (snapshot.empty) {
+                    commentsList.innerHTML = '<p class="text-gray-500">No comments yet. Be the first to comment!</p>';
+                    return;
+                }
+                const comments = [];
+                snapshot.forEach(doc => {
+                    comments.push({ id: doc.id, ...doc.data() });
+                });
+                comments.sort((a, b) => (b.createdAt?.seconds || 0) - (a.createdAt?.seconds || 0));
+                comments.forEach(commentData => {
+                    const commentElement = document.createElement('div');
+                    commentElement.className = 'comment bg-white p-4 rounded-lg shadow';
+                    
+                    const nameElement = document.createElement('p');
+                    nameElement.className = 'font-bold text-blue-800';
+                    nameElement.textContent = commentData.name;
+
+                    const textElement = document.createElement('p');
+                    textElement.className = 'text-gray-700 mt-2';
+                    textElement.textContent = commentData.text;
+
+                    const timeElement = document.createElement('p');
+                    timeElement.className = 'text-xs text-gray-400 mt-3 text-left';
+                    timeElement.textContent = commentData.createdAt ? new Date(commentData.createdAt.seconds * 1000).toLocaleString('en-US') : 'Just now';
+
+                    commentElement.appendChild(nameElement);
+                    commentElement.appendChild(textElement);
+                    commentElement.appendChild(timeElement);
+                    
+                    commentsList.appendChild(commentElement);
+                });
+            }, (error) => {
+                 console.error("Firestore snapshot error:", error);
+                 commentsList.innerHTML = '<p class="text-red-500">Could not load comments at this time.</p>';
+            });
+        }
+
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                initializeCommentsSection();
+            } else {
+                try {
+                    if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                        await signInWithCustomToken(auth, __initial_auth_token);
+                    } else {
+                        await signInAnonymously(auth);
+                    }
+                } catch (error) {
+                    console.error("Authentication error:", error);
+                    const submitButton = document.getElementById('submit-comment');
+                    if(submitButton) submitButton.disabled = true;
+                    const commentsList = document.getElementById('comments-list');
+                    if(commentsList) commentsList.innerHTML = '<p class="text-red-500">Cannot add or view comments due to an authentication issue.</p>';
+                }
+            }
+        });
+    </script>
 </body>
 </html>
